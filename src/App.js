@@ -1,4 +1,10 @@
+import CounterTS from './components/CounterTS.tsx';
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <CounterTS />
+    </div>
+  );
 };
 export default App;

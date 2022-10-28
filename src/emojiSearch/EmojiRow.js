@@ -22,7 +22,6 @@ const EmojiRow = ({ title, symbol }) => {
       }}
     >
       <img src={src} alt={title} />
-      <span className="title">{title}</span>
       <span className="info">{alert ? 'Copiado!' : 'Copiar'}</span>
     </div>
   );

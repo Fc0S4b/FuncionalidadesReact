@@ -15,16 +15,12 @@ body{
 }
 
 .container{
-  height: 200px;
   width: 300px;
   background: lightsteelblue;
     border-radius: 10px;
 }
 
-header{
-  /* width: 300px; */
 
-}
 
 .title-center{
   text-align: center;
@@ -47,4 +43,19 @@ padding: 10px;
 
 .emoji-result{
   cursor: pointer;
+  font-size: 10px;
+  width: 55px;
+  margin-left: 5px;
+
+}
+.emoji-result img{
+  height: 30px;
+  width: 30px;
+  
+}
+.container-emojis{
+ padding: 10px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5,1fr);
 }

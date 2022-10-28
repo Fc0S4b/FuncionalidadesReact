@@ -38,4 +38,13 @@ padding: 10px;
 .search-input{
  
   width: 100%;
+  background: rgb(41, 161, 155);
+  border-radius: 2px;
+  color: white;
+  border: none;
+  outline:none;
+}
+
+.emoji-result{
+  cursor: pointer;
 }

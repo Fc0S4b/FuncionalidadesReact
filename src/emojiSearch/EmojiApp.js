@@ -3,9 +3,10 @@ import Header from './Header';
 import SearchInput from './SearchInput';
 import './index.css';
 import filterEmoji from './utils/filterEmoji';
+import Results from './Results';
 
 const EmojiApp = () => {
-  const [filter, setFilter] = useState(filterEmoji('', 20));
+  const [filter, setFilter] = useState(filterEmoji('', 10));
 
   const handleSearchChange = (e) => {
     setFilter(filterEmoji(e.target.value, 20));
@@ -13,7 +14,8 @@ const EmojiApp = () => {
   return (
     <div className="container">
       <Header />
-      <SearchInput />
+      <SearchInput textChange={handleSearchChange} />
+      <Results emojis={filter} />
     </div>
   );
 };

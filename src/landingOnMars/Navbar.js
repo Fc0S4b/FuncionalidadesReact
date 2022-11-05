@@ -13,6 +13,7 @@ const Navbar = () => {
 export default Navbar;
 
 const Wrapper = styled.nav`
+  margin-top: 30%;
   img {
     display: block;
     height: 150px;
@@ -22,6 +23,7 @@ const Wrapper = styled.nav`
     position: relative;
     width: 200px;
     transition: transform 0.5s ease-in-out;
+    margin: 10px;
   }
   .select-rover:hover {
     transform: scale(1.7);
